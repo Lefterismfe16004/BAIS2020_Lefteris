@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "03540172-8042-49b7-bc22-9c070f265b81",
+		"name": "review for movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "review requset",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "thebigshort",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "p7IKiBUG1Hi1KFxLwEQEMqbCEbMx6Aqp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=the_big_short&api-key=p7IKiBUG1Hi1KFxLwEQEMqbCEbMx6Aqp",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nytimes",
+						"com"
+					],
+					"path": [
+						"svc",
+						"movies",
+						"v2",
+						"reviews",
+						"search.json"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "the_big_short"
+						},
+						{
+							"key": "api-key",
+							"value": "p7IKiBUG1Hi1KFxLwEQEMqbCEbMx6Aqp"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
